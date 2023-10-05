@@ -1,0 +1,119 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    top: 0;
+    outline: solid;
+    overflow: auto;
+    font-family: 'Libre Baskerville', serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #BF214B;
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    color: #003F87;
+    padding: 50px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.main {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 20vw 1fr 20vw;
+}
+
+.main img {
+    width: 15vw;
+}
+
+.main p {
+    text-align: center;
+    padding: 2rem;
+    line-height: 1.5;
+    color: #003F87;
+}
+
+.main > #yonsei {
+    padding-left: 25%;
+}
+
+.main > #flag {
+    outline: solid;
+    float: right;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    float: center;
+  }
+
+.title img {
+    width: 100vw;
+    height: 40vw;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    opacity: .75;
+    padding-bottom: 2%;
+}
+
+.title p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+#blue {
+    color: #003F87;
+    font-weight: bold;
+}
+
+#font {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+}
+
+/* On screens that are 576px or less, adapt the mobile layout */
+@media screen and (max-width: 576px) {
+    .main {
+        display: block;
+    }
+
+    .main img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        float: none;
+        text-align: center
+    }
+
+    .main p {
+        padding: 2%;
+    }
+
+    .main #flag {
+        float: none;
+    }
+    
+    .main #yonsei {
+        padding-left: 0%;
+    }
+}
